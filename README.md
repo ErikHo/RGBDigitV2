@@ -44,7 +44,7 @@ uint32_t type as defined in the underlying Adafruit_Neopixel class.
 
 
 ## Class methods
-Constructor of the RGBDigit class. <nDigits> is the number of digits.  
+Constructor of the RGBDigit class. \<nDigits\> is the number of digits.  
 <pin> is the pin number, which defaults to pin 12 if this parameter is omitted:  
 **RGBDigit(int nDigits, int pin = 12);**  
 
