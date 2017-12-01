@@ -1,0 +1,16 @@
+RGBDigit	KEYWORD1
+begin	KEYWORD2
+clearAll	KEYWORD2
+setDigit	KEYWORD2
+setDot	KEYWORD2
+setSegment	KEYWORD2
+setPattern	KEYWORD2
+setText	KEYWORD2
+clearDigit	KEYWORD2
+clearDot	KEYWORD2
+clearSegment	KEYWORD2
+segmentLit	KEYWORD2
+reColor	KEYWORD2
+enableAutoShow	KEYWORD2
+disableAutoShow	KEYWORD2
+reColorSegment	KEYWORD2
