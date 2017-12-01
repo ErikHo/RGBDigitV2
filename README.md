@@ -104,7 +104,7 @@ Recolor all displayed digits, exclude dots:
 **void reColor(uint32_t c);**  
 
 Enable automatic pixel update, issue a show() command:  
-**void setAutoShow();**  
+**void enableAutoShow();**  
 Disable automatic pixel update:  
-**void clearAutoShow();**  
+**void disableAutoShow();**  
 
