@@ -1,4 +1,4 @@
-# RGBDigitV2
+﻿# RGBDigitV2
 Arduino library for RGBDigits http://www.rgbdigit.com/
 
 This library is a replacement for the original RGBDigit library ( Crützen 2015 ).
@@ -45,13 +45,13 @@ uint32_t type as defined in the underlying Adafruit_Neopixel class.
 
 ## Class methods
 Constructor of the RGBDigit class. <nDigits> is the number of digits.  
-<pin> is the pin number, which defaults to pin 12 if this parameter is omitted:
+<pin> is the pin number, which defaults to pin 12 if this parameter is omitted:  
 **RGBDigit(int nDigits, int pin = 12);**  
 
-Initialize RGBDigit:  
+Initialize RGBDigit:    
 **void begin();**
 
-Clear all digits:
+Clear all digits:  
 **void clearAll();**
 
 Show a character on <digit>.
@@ -60,50 +60,51 @@ is shown. This of course includes 0..9 in decimal. Otherwise show character
 on <digit>. Valid characters are letters (case insensitive) from a to z,
 dash -, underscore _, brackets  \(, \), \{, \}, \[, \] and space. A special
 character (3 bars) is used for ascii values not supported. Use an asterisk(*)
-for the degree sign:
-**void setDigit(char x, unsigned int digit,  byte red, byte green, byte blue );**
+for the degree sign:  
+**void setDigit(char x, unsigned int digit,  byte red, byte green, byte blue );**  
 **void setDigit(char x, unsigned int digit,  uint32_t c);**
 
-Show dot on <digit>:
-**void setDot(unsigned int digit, byte red, byte green, byte blue);**
+Show dot on <digit>:  
+**void setDot(unsigned int digit, byte red, byte green, byte blue);**  
 **void setDot(unsigned int digit, uint32_t c);**
 
-Show segment on <digit>:
-**void setSegment(unsigned int digit, byte segment, byte red, byte green, byte blue);**
-**void setSegment(unsigned int digit, byte segment, uint32_t c);**
+Show segment on <digit>:  
+**void setSegment(unsigned int digit, byte segment, byte red, byte green, byte blue);**  
+**void setSegment(unsigned int digit, byte segment, uint32_t c);**  
 
-Write a bit pattern to <digit>.
+Write a bit pattern to <digit>.  
 The rightmost (lowest) bit controls the A segment and
 the leftmost (highest) bit controls the decimal point.
 if a bit in <pattern> equals 1 the corresponding segemnt
-is set to color rgb(red,green,blue), otherwise to black (0):
-**void setPattern(byte pattern, unsigned int digit, byte red, byte green, byte blue);**
-**void setPattern(byte pattern, unsigned int digit, uint32_t c);**
+is set to color rgb(red,green,blue), otherwise to black (0):  
+**void setPattern(byte pattern, unsigned int digit, byte red, byte green, byte blue);**  
+**void setPattern(byte pattern, unsigned int digit, uint32_t c);**  
 
 Write the text t from <start> up to <start> + <length>  in char t[]
-or String t to the RGBDigit display:
-**void setText(char t[], int start, int length, byte red, byte green, byte blue);**
-**void setText(char t[], int start, int length, uint32_t c);**
+or String t to the RGBDigit display:  
+**void setText(char t[], int start, int length, byte red, byte green, byte blue);**  
+**void setText(char t[], int start, int length, uint32_t c);**  
 
-Clear digit, dot, segment:
-**void clearDigit(unsigned int digit);**
-**void clearDot(unsigned int digit);**
-**void clearSegment(unsigned int digit, byte segment);**
+Clear digit, dot, segment:  
+**void clearDigit(unsigned int digit);**  
+**void clearDot(unsigned int digit);**  
+**void clearSegment(unsigned int digit, byte segment);**  
 
-Returns *true* if segment on digit is on. Otherwise, returns *false*:
-**bool segmentLit(unsigned int digit, byte segment);**
+Returns *true* if segment on digit is on. Otherwise, returns *false*:  
+**bool segmentLit(unsigned int digit, byte segment);**  
 
-Recolor a lit segment, dot possible
-**void reColorSegment(unsigned int digit, byte segment, byte red, byte green, byte blue);**
-**void reColorSegment(unsigned int digit, byte segment, uint32_t c);**
-Recolor a displayed digit, exclude dots
-**void reColor(unsigned int digit, byte red, byte green, byte blue);**
-**void reColor(unsigned int digit, uint32_t c);**
-Recolor all displayed digits, exclude dots
-**void reColor(byte red, byte green, byte blue);**
-**void reColor(uint32_t c);**
+Recolor a lit segment, dot possible:  
+**void reColorSegment(unsigned int digit, byte segment, byte red, byte green, byte blue);**  
+**void reColorSegment(unsigned int digit, byte segment, uint32_t c);**  
+Recolor a displayed digit, exclude dots:  
+**void reColor(unsigned int digit, byte red, byte green, byte blue);**  
+**void reColor(unsigned int digit, uint32_t c);**  
+Recolor all displayed digits, exclude dots:  
+**void reColor(byte red, byte green, byte blue);**  
+**void reColor(uint32_t c);**  
 
-Enable automatic pixel update, issue a show() command:
-**void setAutoShow();**
-Disable automatic pixel update:
-**void clearAutoShow();**
+Enable automatic pixel update, issue a show() command:  
+**void setAutoShow();**  
+Disable automatic pixel update:  
+**void clearAutoShow();**  
+
