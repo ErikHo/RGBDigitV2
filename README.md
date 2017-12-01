@@ -54,7 +54,7 @@ Initialize RGBDigit:
 Clear all digits:  
 **void clearAll();**
 
-Show a character on <digit>.
+Show a character on \<digit\>.
 If the ascii value of char is between 0 and 15 a hexadecimal symbol 0..F
 is shown. This of course includes 0..9 in decimal. Otherwise show character
 on <digit>. Valid characters are letters (case insensitive) from a to z,
@@ -64,23 +64,23 @@ for the degree sign:
 **void setDigit(char x, unsigned int digit,  byte red, byte green, byte blue );**  
 **void setDigit(char x, unsigned int digit,  uint32_t c);**
 
-Show dot on <digit>:  
+Show dot on \<digit\>:  
 **void setDot(unsigned int digit, byte red, byte green, byte blue);**  
 **void setDot(unsigned int digit, uint32_t c);**
 
-Show segment on <digit>:  
+Show segment on \<digit\>:  
 **void setSegment(unsigned int digit, byte segment, byte red, byte green, byte blue);**  
 **void setSegment(unsigned int digit, byte segment, uint32_t c);**  
 
-Write a bit pattern to <digit>.  
+Write a bit pattern to \<digit\>.  
 The rightmost (lowest) bit controls the A segment and
 the leftmost (highest) bit controls the decimal point.
-if a bit in <pattern> equals 1 the corresponding segemnt
+if a bit in <pattern> equals 1 the corresponding segment
 is set to color rgb(red,green,blue), otherwise to black (0):  
 **void setPattern(byte pattern, unsigned int digit, byte red, byte green, byte blue);**  
 **void setPattern(byte pattern, unsigned int digit, uint32_t c);**  
 
-Write the text t from <start> up to <start> + <length>  in char t[]
+Write the text t from \<start\> up to \<start\> + \<length\>  in char t[]
 or String t to the RGBDigit display:  
 **void setText(char t[], int start, int length, byte red, byte green, byte blue);**  
 **void setText(char t[], int start, int length, uint32_t c);**  
